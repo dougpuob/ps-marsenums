@@ -1,0 +1,1 @@
+Publish-Module -Path . -NuGetApiKey oy2kxkugd72g7qo6irdazs2cywwqlbbefg67eqqzohlpru
