@@ -3,132 +3,132 @@
 # Kind of Error Code
 #-----------------------------------------------------------------------------------
 enum ErrorCode {
-    EC_OK      = 0
+    ER_OK      = 0
 
     # Action
-    EC_Action = 100
-    EC_ActionTryAgain
-    EC_ActionNotPermitted
-    EC_ActionPermissionDenied
+    ERR_Action = 100
+    ERR_ActionTryAgain
+    ERR_ActionNotPermitted
+    ERR_ActionPermissionDenied
 
     # Buffer
-    EC_Buffer = 1000
-    EC_BufferTooSmall
-    EC_BufferWithNullPointer
-    EC_BufferWithUnmatchedSize
-    EC_BufferOutOfBoundary
-    EC_BufferCorrupted
-    EC_BufferToResize
-    EC_BufferToAllocate
-    EC_BufferToFree
-    EC_BufferExecFormatError
+    ERR_Buffer = 1000
+    ERR_BufferTooSmall
+    ERR_BufferWithNullPointer
+    ERR_BufferWithUnmatchedSize
+    ERR_BufferOutOfBoundary
+    ERR_BufferCorrupted
+    ERR_BufferToResize
+    ERR_BufferToAllocate
+    ERR_BufferToFree
+    ERR_BufferExecFormatError
 
     # Data
-    EC_Data = 2000
-    EC_DataTypeNotDefined
-    EC_DataElementNotFound
-    EC_DataTargetNotFound
-    EC_DataTargetExistAlready
-    EC_DataToProcess
-    EC_DataToCalculate
-    EC_DataToCompress
-    EC_DataToDecompress
-    EC_DataInvalid
-    EC_DataHeaderInvalid
-    EC_DataHeaderUnsupported
-    EC_DataTooLarge
+    ERR_Data = 2000
+    ERR_DataTypeNotDefined
+    ERR_DataElementNotFound
+    ERR_DataTargetNotFound
+    ERR_DataTargetExistAlready
+    ERR_DataToProcess
+    ERR_DataToCalculate
+    ERR_DataToCompress
+    ERR_DataToDecompress
+    ERR_DataInvalid
+    ERR_DataHeaderInvalid
+    ERR_DataHeaderUnsupported
+    ERR_DataTooLarge
 
     # File
-    EC_File = 3000
-    EC_FileIsEmpty
-    EC_FileIsNotEmpty
-    EC_FileNotFound
-    EC_FileToFailed
-    EC_FileToWrite
-    EC_FileToMove
-    EC_FileToCreate
-    EC_FileToDelete
-    EC_FileToSeek
-    EC_FileSizeTooLarge
-    EC_FileSizeIsZero
-    EC_FileSizeIsInvalid
-    EC_FileNameTooLong
-    EC_FileNameNotAllowed
-    EC_FileExecFormatError
+    ERR_File = 3000
+    ERR_FileIsEmpty
+    ERR_FileIsNotEmpty
+    ERR_FileNotFound
+    ERR_FileToFailed
+    ERR_FileToWrite
+    ERR_FileToMove
+    ERR_FileToCreate
+    ERR_FileToDelete
+    ERR_FileToSeek
+    ERR_FileSizeTooLarge
+    ERR_FileSizeIsZero
+    ERR_FileSizeIsInvalid
+    ERR_FileNameTooLong
+    ERR_FileNameNotAllowed
+    ERR_FileExecFormatError
 
     # Folder
-    EC_Folder = 4000
-    EC_FolderEmpty
-    EC_FolderNotEmpty
-    EC_FolderToFind
-    EC_FolderToRead
-    EC_FolderToWrite
-    EC_FolderToMove
-    EC_FolderToDelete
+    ERR_Folder = 4000
+    ERR_FolderEmpty
+    ERR_FolderNotEmpty
+    ERR_FolderToFind
+    ERR_FolderToRead
+    ERR_FolderToWrite
+    ERR_FolderToMove
+    ERR_FolderToDelete
 
     # Function
-    EC_Function = 5000
-    EC_FunctionUnmatched
-    EC_FunctionUnimplemented
-    EC_FunctionEmptyParameter
-    EC_FunctionArgListTooLong
-    EC_FunctionNullParamter
-    EC_FunctionInvalidParameter
-    EC_FunctionBadAddress
+    ERR_Function = 5000
+    ERR_FunctionUnmatched
+    ERR_FunctionUnimplemented
+    ERR_FunctionEmptyParameter
+    ERR_FunctionArgListTooLong
+    ERR_FunctionNullParamter
+    ERR_FunctionInvalidParameter
+    ERR_FunctionBadAddress
 
     # Service
-    EC_Service = 6000
-    EC_ServiceToLoad
-    EC_ServiceToUnload
-    EC_ServiceToStart
-    EC_ServiceToStop
-    EC_ServiceToPause
-    EC_ServiceToDelete
-    EC_ServiceDeny
+    ERR_Service = 6000
+    ERR_ServiceToLoad
+    ERR_ServiceToUnload
+    ERR_ServiceToStart
+    ERR_ServiceToStop
+    ERR_ServiceToPause
+    ERR_ServiceToDelete
+    ERR_ServiceDeny
 
     # System
-    EC_System = 7000
-    EC_SystemPackageNotInstall
-    EC_SystemTooManyUser
-    EC_SystemOperationAlreadyInProgress
-    EC_SystemOperationNotInProgress
-    EC_SystemQuotaExceeded
-    EC_SystemNoMediumFound
-    EC_SystemWrongMediumFound
+    ERR_System = 7000
+    ERR_SystemPackageNotInstall
+    ERR_SystemTooManyUser
+    ERR_SystemOperationAlreadyInProgress
+    ERR_SystemOperationNotInProgress
+    ERR_SystemQuotaExceeded
+    ERR_SystemNoMediumFound
+    ERR_SystemWrongMediumFound
 
 
     # FileSystem
-    EC_FileSystem = 8000
+    ERR_FileSystem = 8000
 
     # Network
-    EC_Network = 9000
+    ERR_Network = 9000
 
     # Command
-    EC_Command = 10000
-    EC_CommandUndefined
-    EC_CommandUnimplemented
-    EC_CommandNoConfigFile
-    EC_CommandToParse
-    EC_CommandToLoadConfigFile
-    EC_CommandToExec
-    EC_CommandBadAddress
+    ERR_Command = 10000
+    ERR_CommandUndefined
+    ERR_CommandUnimplemented
+    ERR_CommandNoConfigFile
+    ERR_CommandToParse
+    ERR_CommandToLoadConfigFile
+    ERR_CommandToExec
+    ERR_CommandBadAddress
 
 
     # Framework of PowerShell
-    EC_Pester = 11000
-    EC_PesterToRunUnitTest
-    EC_PesterToRunIntegratedTest
-    EC_PesterToRunSystemTest
+    ERR_Pester = 11000
+    ERR_PesterToRunUnitTest
+    ERR_PesterToRunIntegratedTest
+    ERR_PesterToRunSystemTest
 
     # Framework of Python
-    EC_PyUnitTest
+    ERR_PyUnitTest
 
     # Framework of C++
-    EC_GTest
+    ERR_GTest
 
     # Unknown
-    EC_Undefined  = 99998
-    EC_Unknown    = 99999
+    ERR_Undefined  = 99998
+    ERR_Unknown    = 99999
 }
 
 #-----------------------------------------------------------------------------------
@@ -172,6 +172,13 @@ enum BinaryBit {
     X32
 }
 
+enum BitArch {
+    X64
+    X32
+    Ia64
+    Arm
+}
+
 enum CmakeGenerator {
     None = 0
     Msvc2019            # Visual Studio 16 2019        = Generates Visual Studio 2019 project files. Use -A option to specify architecture.
@@ -183,7 +190,7 @@ enum CmakeGenerator {
     Msvc2008            # Visual Studio 9 2008 [arch]  = Generates Visual Studio 2008 project files.
     BorlandMakefiles    # Borland Makefiles            = Generates Borland makefiles.
     NMakeMakefiles      # NMake Makefiles              = Generates NMake makefiles.
-    NMakeMakefilesJOM   # NMake Makefiles JOM          = Generates JOM makefiles.
+    NMakeMakefilesJom   # NMake Makefiles JOM          = Generates JOM makefiles.
     MSysMakefiles       # MSYS Makefiles               = Generates MSYS makefiles.
     MinGWMakefiles      # MinGW Makefiles              = Generates a make file for use with mingw32-make.
     UnixMakefiles       # Unix Makefiles               = Generates standard UNIX makefiles.
@@ -200,7 +207,7 @@ enum CmakeGenerator {
 #-----------------------------------------------------------------------------------
 # The verbosity of output, options are None, Normal, Detailed and Diagnostic. (Normal, default: Normal)
  enum PesterLogEnum {
-    Undefined = [ErrorCode]::EC_Undefined
+    Undefined = [ErrorCode]::ERR_Undefined
     None = 0
     Normal
     Detailed
@@ -213,26 +220,28 @@ enum CmakeGenerator {
 # Options for DevOps.ps1
 #-----------------------------------------------------------------------------------
  enum UsageEnum {
-    Undefined = [ErrorCode]::EC_Undefined
-    None  = 0
-    All
+    Undefined = [ErrorCode]::ERR_Undefined
+    None = 0
+    Clear
     Lint
+    Start
     Build
-    Test
     Pack
+    Test
     Audit
-    Clean
+    All
 }
 
 enum LogType {
-    Undefined = [ErrorCode]::EC_Undefined
-    None
+    Undefined = [ErrorCode]::ERR_Undefined
+    None = 0
     Error
     Warning
     Information
 }
 
 enum ClangFormatStyle {
+    None = 0
     LLVM
     Google
     Chromium
