@@ -3,7 +3,7 @@
 # Kind of Error Code
 #-----------------------------------------------------------------------------------
 enum ErrorCode {
-    ER_OK      = 0
+    ERR_OK      = 0
 
     # Action
     ERR_Action = 100
@@ -163,20 +163,37 @@ enum CpuKinds {
 #
 #-----------------------------------------------------------------------------------
 enum BuildType {
+    None
     Release
     Debug
 }
 
 enum BinaryBit {
+    None
     X64
     X32
 }
 
 enum BitArch {
+    None
     X64
     X32
     Ia64
     Arm
+}
+
+enum PackItemType {
+    None
+    File
+    Dir
+}
+
+enum OsName {
+    None
+    All
+    Windows
+    Linux
+    MacOs
 }
 
 enum CmakeGenerator {
@@ -222,6 +239,8 @@ enum CmakeGenerator {
  enum UsageEnum {
     Undefined = [ErrorCode]::ERR_Undefined
     None = 0
+    Info
+    Result
     Clear
     Lint
     Start
