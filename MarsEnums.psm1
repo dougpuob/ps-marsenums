@@ -198,6 +198,10 @@ enum OsName {
 
 enum CmakeGenerator {
     None = 0
+    Default
+    #--------------------------------------------------
+    # Supported with CMake
+    #--------------------------------------------------
     Msvc2019            # Visual Studio 16 2019        = Generates Visual Studio 2019 project files. Use -A option to specify architecture.
     Msvc2017            # Visual Studio 15 2017 [arch] = Generates Visual Studio 2017 project files. Optional [arch] can be "Win64" or "ARM".
     Msvc2015            # Visual Studio 14 2015 [arch] = Generates Visual Studio 2015 project files. Optional [arch] can be "Win64" or "ARM".
@@ -215,7 +219,20 @@ enum CmakeGenerator {
     Ninja               # Ninja                        = Generates build.ninja files.
     NinjaMultiConfig    # Ninja Multi-Config           = Generates build-<Config>.ninja files.
     WatcomWMake         # Watcom WMake                 = Generates Watcom WMake makefiles.
-    Xcode
+    Xcode               # Apple's IDE ofr macOS.
+
+    #--------------------------------------------------
+    # Not defined in CMake
+    #--------------------------------------------------
+    MSBuild             # Microsoft Build Engine
+
+    # Conan
+    SunGcc
+    Gcc
+    Clang
+    AppleClang
+    Qcc
+    Intel
 }
 
 
@@ -242,6 +259,7 @@ enum CmakeGenerator {
     Info
     Result
     Clear
+    Config
     Lint
     Start
     Build
@@ -268,3 +286,4 @@ enum ClangFormatStyle {
     WebKit
     Microsoft
 }
+
