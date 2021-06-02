@@ -287,3 +287,9 @@ enum ClangFormatStyle {
     Microsoft
 }
 
+enum TestType {
+    Unknown = 0
+    UnitTest
+    IntegratedTest
+    SystemTest
+}
