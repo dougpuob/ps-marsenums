@@ -293,3 +293,16 @@ enum TestType {
     IntegratedTest
     SystemTest
 }
+
+enum ProjectType {
+    Default = 0
+    Console    
+    MFC
+    Qt 
+    WxWidgets
+    WDM
+    WDF
+    LinuxDriver
+    StaticLibrary
+    DynamicLibrary
+}
