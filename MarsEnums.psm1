@@ -112,14 +112,14 @@ enum ErrorCode {
     ERR_CommandToLoadConfigFile
     ERR_CommandToExec
     ERR_CommandBadAddress
-    
+
     # Check
     ERR_Check = 11000
     ERR_CheckGotFailure
     ERR_CheckGotAssertion
     ERR_CheckGotError
-    ERR_CheckNotIdentical    
-    
+    ERR_CheckNotIdentical
+
     # Framework of PowerShell
     ERR_Pester = 11000
     ERR_PesterToRunUnitTest
@@ -305,9 +305,9 @@ enum TestType {
 
 enum ProjectType {
     Default = 0
-    Console    
+    Console
     MFC
-    Qt 
+    Qt
     WxWidgets
     WDM
     WDF
