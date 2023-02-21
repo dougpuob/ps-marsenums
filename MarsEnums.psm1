@@ -270,6 +270,8 @@ enum CmakeGenerator {
     Clear
     Config
     Lint
+    LintFmt
+    LintTidy
     Start
     Build
     Pack
@@ -305,13 +307,38 @@ enum TestType {
 
 enum ProjectType {
     Default = 0
-    Console
-    MFC
+    #
+    # GUI Frameworks
+    #
     Qt
+    MFC
     WxWidgets
-    WDM
-    WDF
-    LinuxDriver
+    #
+    # Libraries
+    #
+    Library
     StaticLibrary
     DynamicLibrary
+    #
+    # System Drivers
+    #
+    WindowsDriver
+    LinuxDriver
+    #
+    # Script languages
+    #
+    PowerShell
+    Python
+    #
+    # Deprecated
+    #
+    Console
+    WDM
+    WDF
+}
+
+enum PackMethod {
+    NestedDir
+    FlatDir
+    LastDir
 }
