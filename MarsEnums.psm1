@@ -211,6 +211,7 @@ enum CmakeGenerator {
     #--------------------------------------------------
     # Supported with CMake
     #--------------------------------------------------
+	Msvc2026            # Visual Studio 18 2026        = Generates Visual Studio 2026 project files. Use -A option to specify architecture.
     Msvc2022            # Visual Studio 17 2022        = Generates Visual Studio 2022 project files. Use -A option to specify architecture.
     Msvc2019            # Visual Studio 16 2019        = Generates Visual Studio 2019 project files. Use -A option to specify architecture.
     Msvc2017            # Visual Studio 15 2017 [arch] = Generates Visual Studio 2017 project files. Optional [arch] can be "Win64" or "ARM".
